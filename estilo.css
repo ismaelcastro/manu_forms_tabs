@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	background:#777777;
+	text-align:center;
+	
+}
+ul.tabs input[type=radio]{
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+}
+ul.tabs{
+	list-style:none;
+	float:none;
+	position:relative;
+	min-width:400px;
+	width:400px;
+	margin:63px auto;
+	text-align:left;
+	
+	
+}
+ul.tabs li{
+	float:left;
+}
+ul.tabs li label{
+	padding:10px 7px;
+	display:block;
+	font-size:18px;
+	background:#6FA6D9;
+	margin-right:5px;
+	position:relative;
+	cursor:pointer;
+	color:#FFF;
+	font-family:'Simplified Arabic',sans-serif;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	
+	
+}
+
+
+.envolve{
+	margin:8px 0px;
+}
+[id^=tab]:checked + label{
+	background:#272E38;
+}
+.content_tab{
+	z-index:2;
+	position:absolute;
+	background:#272E38;
+	width:100%;
+	left:0;
+	padding:5px;
+	display:none;
+	margin-left:40px;
+	padding-bottom:20px;
+	color:#FFF;
+	height:400px;
+}
+[id^=tab]:checked ~ [id^=tab_content]{
+	display:block;
+	
+}
+
+.titulo_campo{
+	display:block;
+	color:white;
+	font:20px 'Simplified Arabic';
+	
+	
+}
+.dica , .notificacao{
+	position:absolute;
+	left:460px;
+	margin-top:-45px;
+	width:260px;
+	z-index:3;
+	padding:10px 10px;
+	border-radius:5px;
+	display:none;
+	box-shadow:2px 2px 3px #000000;
+	
+	
+	
+	
+}
+.seta_verde{
+	background:url(seta_verde.png) no-repeat;
+	height:20px;
+	width:10px;
+	margin-left:-20px;
+	position:absolute;
+	
+	
+}
+.seta_vemelha{
+	background:url(seta_vermelha.png) no-repeat;
+	height:20px;
+	width:10px;
+	margin-left:-20px;
+	position:absolute;
+	
+}
+.dica{
+	background:#9EB13B;
+	
+}
+.notificacao{
+	background:#E1292B;
+	
+	
+}
+.campos{
+	width:98%;
+	font-size:20px;
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.botoes{
+	float:right;
+	margin-right:4px;
+	margin-top:6px;
+	height:46px;
+	width:114px;
+	text-shadow:1px 1px 3px #000000;
+	background:#327BBE;
+	border:0;
+	color:#FFF;
+	position:absolute;
+	bottom:18px;
+	right:6px;
+	
+}
+.botoes:hover{
+	background:#84B4DF;
+}

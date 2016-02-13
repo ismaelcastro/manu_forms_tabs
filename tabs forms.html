@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+</head>
+
+<body>
+	<ul class="tabs">
+    	<li>
+        	<input type="radio" name="tabs" checked="checked" id="tab1">
+            <label for="tab1">Inscrever-se</label>
+            <div id="tab_content1" class="content_tab">
+            	
+                <form name="cadastrar" id="cadastrar" method="post" action="cadastrar.php">
+                	<div class="envolve"> <!-- Inicio da div envolve -->
+                    	<span class="titulo_campo">Nome do Usuario</span>
+                        <input type="text" name="nome" id="nome" class="campos" placeholder="myusername">
+                        <p class="dica">
+                        	<span class="seta_verde"></span>
+                            Aqui vai a dica de preenchimento do campo.
+                        </p>
+                        
+                        <p class="notificacao">
+                        	<span class="seta_vemelha"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                    </div> <!-- Fim da div envolve -->
+                    
+                    <div class="envolve"> <!-- Inicio da div envolve -->
+                    	<span class="titulo_campo">E-mail</span>
+                        <input type="email" id="email" name="email" class="campos" placeholder="myemail@provedor.com">
+                        <p class="dica">
+                        	<span class="seta_verde"></span>
+                        	Aqui vai a dica de preenchimento do campo.
+                        </p>
+                        
+                        <p class="notificacao">
+                        	<span class="seta_vemelha"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                    </div> <!-- Fim da div envolve -->
+                    
+                    <div class="envolve"> <!-- Inicio da div envolve -->
+                    	<span class="titulo_campo">Por favor digite uma senha</span>
+                        <input type="password" name="password" id="senha" class="campos" placeholder="********">
+                        <p class="dica">
+                        	<span class="seta_verde"></span>
+                        	Aqui vai a dica de preenchimento do campo.
+                        </p>
+                        
+                        <p class="notificacao">
+                        	<span class="seta_vemelha"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                    </div> <!-- Fim da div envolve -->
+                    
+                    
+                    <div class="envolve"> <!-- Inicio da div envolve -->
+                    	<span class="titulo_campo">Por favor confirme a senha</span>
+                        <input type="password" name="password2" id="senha1" class="campos" placeholder="********">
+                        <p class="dica">
+                        	<span class="seta_verde"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                        
+                        <p class="notificacao">
+                        	<span class="seta_vemelha"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                    </div> <!-- Fim da div envolve -->
+                   
+                    <input type="submit" id="enviar" class="botoes" value="cadastar">
+                </form>
+            
+            </div>
+        </li>
+        
+        
+        <li>
+        	
+            
+            
+            
+            
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2">Login</label>
+            <div id="tab_content2" class="content_tab">
+            	<form name="logar" id="login" method="post" action="logar.php">
+                	                    
+                    <div class="envolve"> <!-- Inicio da div envolve -->
+                    	<span class="titulo_campo">E-mail</span>
+                        <input type="email" id="email" name="email" class="campos" placeholder="myemail@provedor.com">
+                        <p class="dica">
+                        	<span class="seta_verde"></span>
+                        	Aqui vai a dica de preenchimento do campo.
+                        </p>
+                        
+                        <p class="notificacao">
+                        	<span class="seta_vemelha"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                    </div> <!-- Fim da div envolve -->
+                    
+                    <div class="envolve"> <!-- Inicio da div envolve -->
+                    	<span class="titulo_campo">Senha</span>
+                        <input type="password" name="password" id="senha" class="campos" placeholder="********">
+                        <p class="dica">
+                        	<span class="seta_verde"></span>
+                        	Aqui vai a dica de preenchimento do campo.
+                        </p>
+                        
+                        <p class="notificacao">
+                        	<span class="seta_vemelha"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                    </div> <!-- Fim da div envolve -->
+                                       
+                    <input type="submit" id="logar" class="botoes" value="Logar">
+                </form>
+            </div>
+      
+      
+      
+      
+        </li>
+        
+        
+        
+        <li>
+        	<input type="radio" name="tabs" id="tab3">
+            <label for="tab3">Recuperar Senha</label>
+            <div id="tab_content3" class="content_tab">
+           		<form name="recuperar" id="login" method="post" action="recuperar.php">
+                	                    
+                    <div class="envolve"> <!-- Inicio da div envolve -->
+                    	<span class="titulo_campo">E-mail</span>
+                        <input type="email" id="email" name="email" class="campos" placeholder="myemail@provedor.com">
+                        <p class="dica">
+                        	<span class="seta_verde"></span>
+                        	Aqui vai a dica de preenchimento do campo.
+                        </p>
+                        
+                        <p class="notificacao">
+                        	<span class="seta_vemelha"></span>
+                        	Este campo deve ser preenchido
+                        </p>
+                    </div> <!-- Fim da div envolve -->
+                    
+                    
+                                       
+                    <input type="submit" id="logar" class="botoes" value="Enviar">
+                </form>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
